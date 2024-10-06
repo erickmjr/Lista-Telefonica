@@ -139,6 +139,10 @@ th, td{
     
 }
 
+p#msg-contatos{
+    font-size: 1.5vw;
+}
+
 footer{
     padding: 1vw;
     text-align: center;
@@ -164,4 +168,9 @@ footer a{
         font-size: 5vw;
         margin-right: auto;
     }
+
+    p#msg-contatos{
+        font-size: 2.5vw;
+    }
+    
 }
