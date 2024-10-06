@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <main>
+            <header>
+                <img src="imagens/paper.png" alt="Lápis e papel">
+                <h1>Lista telefônica</h1> </header>
+
+            <form id="form-lista">
+                <div id="containerForm">
+                    <input type="text" id="nome" placeholder="Digite o nome..." required>
+                    <input type="tel" id="telefone" placeholder="99 99999-9999" required min="11">
+                    <button id="btnAdicionar" type="submit">✔️</button>
+                </div>
+            </form>
+            <p id="msgErro"></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table">
+                    
+                </tbody>
+            </table>
+            <p id="msg-contatos">Nenhum contato foi adicionado ainda...</p>
+        </main>
+            <footer>
+                <p>Desenvolvido por <a href="#">erickmjr</a></p>
+            </footer>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
