@@ -94,8 +94,5 @@ function excluirContato(i){
     arrayTelefones.splice(i, 1);
 
     removerMensagem();
-
-    console.log(arrayNomes);
-    console.log(arrayTelefones);
 }
 
