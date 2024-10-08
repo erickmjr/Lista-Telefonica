@@ -36,6 +36,34 @@ function verificarStringTel(){
 
 }
 
+nome.addEventListener('input', function(){
+
+    if(arrayNomes.includes(nome.value.trim())){
+
+        msgErro.textContent = (`Já existe um contato com o nome "${nome.value}" na lista.`);
+        msgErro.style.display="block";
+    }
+    else{
+        msgErro.style.display="none";
+    }
+})
+
+telefone.addEventListener('input', function(){
+    telefone.value = telefone.value.replace(/ /g, "");
+    
+    telefone.value = telefone.value.replace(/[()]/g, "");
+
+    telefone.value = telefone.value.replace(/-/g, "");
+
+    if (arrayTelefones.includes(telefone.value.trim())){
+
+        msgErro.textContent = (`O número ${telefone.value} já existe na lista.`);
+        msgErro.style.display="block";
+    }
+    else{
+        msgErro.style.display="none";
+    }
+})
 
 
 function adicionarContato(){
@@ -81,6 +109,7 @@ function removerMensagem(){
         msgContatos.style.display = "none";
     } else{
         msgContatos.style.display = "block";
+        msgErro.style.display = "none";
     }
     
 }
