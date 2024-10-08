@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Telefôncia</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="container">
         <main>
             <header>
                 <img src="imagens/paper.png" alt="Lápis e papel">
-                <h1>Lista telefônica</h1> </header>
+                <h1>Lista Telefônica</h1> </header>
+                
 
             <form id="form-lista">
                 <div id="containerForm">
                     <input type="text" id="nome" placeholder="Digite o nome..." required>
-                    <input type="tel" id="telefone" placeholder="99 99999-9999" required min="11">
+                    <input type="tel" id="telefone" placeholder="99 99999-9999" required>
                     <button id="btnAdicionar" type="submit">✔️</button>
                 </div>
             </form>
@@ -27,6 +29,7 @@
                     <tr>
                         <th>Nome</th>
                         <th>Telefone</th>
+                        <th>Deletar?</th>
                     </tr>
                 </thead>
                 <tbody id="tbody-table">
@@ -38,7 +41,6 @@
             <footer>
                 <p>Desenvolvido por <a href="https://github.com/erickmjr/Lista-Telefonica" target="_blank">erickmjr</a></p>
             </footer>
-        
     </div>
 
     <script src="main.js"></script>
